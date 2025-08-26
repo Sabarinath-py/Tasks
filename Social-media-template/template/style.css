@@ -196,60 +196,175 @@ a:hover {
 
 /* otp-section start */
 .otp-card {
-  border: 1px solid var(--border-light);
-  border-radius: 12px;
-  background-color: var(--bg-card);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .otp-card-title {
-  font-family: 'Lobster', cursive;
-  font-size: 36px;
-  font-style: normal;
-  background: linear-gradient(90deg,
-          var(--brand-gradient-start),
-          var(--brand-gradient-mid),
-          var(--brand-gradient-end));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    font-style: normal;
+    background: linear-gradient(90deg,
+            var(--brand-gradient-start),
+            var(--brand-gradient-mid),
+            var(--brand-gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .otp-input {
-  width: 48px;
-  height: 55px;
-  font-size: 20px;
-  font-weight: 600;
-  border: 1px solid var(--border-light);
-  border-radius: 8px;
+    width: 48px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
 }
 
 .otp-input:focus {
-  border-color: var(--brand-primary);
-  box-shadow: 0 0 6px rgba(255, 45, 85, 0.3);
-  outline: none;
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 6px rgba(255, 45, 85, 0.3);
+    outline: none;
 }
 
 .otp-btn {
-  background-color: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
-  border: none;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: 0.3s ease-in-out;
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
 }
 
 .otp-btn:hover {
-  background-color: var(--btn-primary-hover);
+    background-color: var(--btn-primary-hover);
 }
 
 .resend-link {
-  color: var(--brand-primary);
-  font-weight: 500;
-  cursor: pointer;
+    color: var(--brand-primary);
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .resend-link:hover {
-  color: var(--brand-secondary);
+    color: var(--brand-secondary);
 }
+
 /* otp-section end */
+
+
+
+
+
+/* welcome-page-start */
+.welcome-navbar {
+    background: linear-gradient(90deg,
+            var(--brand-gradient-start),
+            var(--brand-gradient-mid),
+            var(--brand-gradient-end));
+}
+
+.welcome-nav-links .nav-item .nav-link {
+    color: var(--text-light);
+}
+
+.welcome-head {
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.welcome-login-btn {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.welcome-login-btn:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.welcome-signup-btn {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.welcome-signup-btn:hover {
+    background-color: var(--btn-secondary-hover);
+}
+
+.carousel-inner .carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.carousel-title {
+    color: var(--text-light);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.carousel-subtitle1 {
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.carousel-subtitle2 {
+    color: var(--text-light);
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.carousel-btn1 {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.carousel-btn1:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.carousel-btn2 {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.carousel-btn2:hover {
+    background-color: var(--btn-secondary-hover);
+}
+
+.welcome-footer{
+    background: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+    /* welcome-page-end */

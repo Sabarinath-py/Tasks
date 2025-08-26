@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wecome Page</title>
+
+    <!-- bs cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- js-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+    <!-- navbar-section-start -->
+    <nav class="navbar navbar-expand-lg welcome-navbar ">
+        <div class="container ">
+            <a class="navbar-brand welcome-head" href="./welcome-page.html">Funturaa</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0 ms-auto welcome-nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn mx-1 welcome-login-btn" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn mx-1 welcome-signup-btn" href="./signup.html">signup</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar-section-end -->
+
+
+    <!-- carousel-section-start -->
+    <div id="carouselExampleInterval" class="carousel slide position-relative" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./images/pexels-ketut-subiyanto-4307705.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="./images/pexels-kseverin-1542252.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/pexels-olly-3764173.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="container p-3 position-absolute top-50 start-50 translate-middle">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="carousel-title">Welcome to Funturaa 🎗️</h2>
+                    <p class="carousel-subtitle1">Your one-stop solution for all your fun and entertainment needs.</p>
+                    <p class="carousel-subtitle2">- A seamless experience awaits you.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 ">
+                    <a href="./signup.html" class="btn mx-1 carousel-btn1">Join us</a>
+                    <a href="" class="btn mx-1 carousel-btn2">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- carousel-section-end -->
+
+    <!-- Footer-section-start -->
+    <div class="card-fluid welcome-footer text-center p-3">
+        <div class="card-body">
+            <p class="card-text">@ 2025 Funturaa. All rights reserved.</p>
+        </div>
+    </div>
+    <!-- Footer-section-end -->
+
+
+</body>
+
+</html>
