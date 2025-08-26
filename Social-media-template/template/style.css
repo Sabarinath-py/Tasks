@@ -1,0 +1,255 @@
+:root {
+    /*  Base Backgrounds  */
+    --bg-website: #F8F9FB;
+    /* Website background */
+    --bg-section: #FFFFFF;
+    /* Section backgrounds */
+    --bg-card: #FAFAFA;
+    /* Card backgrounds */
+
+    /*  Brand Colors (Gradient & Accents)  */
+    --brand-gradient-start: #FF6A00;
+    /* Orange - energy */
+    --brand-gradient-mid: #FF2D55;
+    /* Pink - creativity */
+    --brand-gradient-end: #9B51E0;
+    /* Purple - premium vibe */
+
+    --brand-primary: #FF2D55;
+    /* Main brand color */
+    --brand-secondary: #3D5AFE;
+    /* Secondary accent */
+
+    /*  Text Colors  */
+    --text-heading: #1A1A1A;
+    /* Headings */
+    --text-body: #4B4B4B;
+    /* Body text */
+    --text-light: #FFFFFF;
+    /* Text on dark backgrounds */
+
+    /*  Buttons  */
+    --btn-primary-bg: var(--brand-primary);
+    --btn-primary-text: #FFFFFF;
+    --btn-primary-hover: #E0244D;
+
+    --btn-secondary-bg: var(--brand-secondary);
+    --btn-secondary-text: #FFFFFF;
+    --btn-secondary-hover: #2B47C7;
+
+    /*  Borders  */
+    --border-light: #E5E7EB;
+    --border-dark: #C1C1C1;
+
+    /*  Alerts & Status  */
+    --success: #10B981;
+    --error: #EF4444;
+    --warning: #FFC300;
+
+    /*  Footer  */
+    --footer-bg: #1F1F1F;
+    --footer-text: #FFFFFF;
+    --footer-link: #9B9B9B;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-website);
+    color: var(--text-body);
+}
+
+
+
+/* login-section start */
+.login-card {
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-card-title {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    font-style: normal;
+    background: linear-gradient(90deg,
+            var(--brand-gradient-start),
+            var(--brand-gradient-mid),
+            var(--brand-gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-btn {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.facebook-login-btn {
+    border: 2px solid var(--brand-secondary);
+    color: var(--brand-secondary);
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.facebook-login-btn:hover {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--brand-primary);
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand-secondary);
+}
+
+.appstore-card {
+    background-color: var(--bg-website);
+}
+
+/* login-section end */
+
+
+
+
+
+/* signup-section start */
+.signup-card {
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.signup-card-title {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    font-style: normal;
+    background: linear-gradient(90deg,
+            var(--brand-gradient-start),
+            var(--brand-gradient-mid),
+            var(--brand-gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.signup-btn {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.facebook-login-btn {
+    border: 2px solid var(--brand-secondary);
+    color: var(--brand-secondary);
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.facebook-login-btn:hover {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--brand-primary);
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand-secondary);
+}
+
+.appstore-card {
+    background-color: var(--bg-website);
+}
+
+/* signup-section end */
+
+
+
+
+
+/* otp-section start */
+.otp-card {
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background-color: var(--bg-card);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.otp-card-title {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  font-style: normal;
+  background: linear-gradient(90deg,
+          var(--brand-gradient-start),
+          var(--brand-gradient-mid),
+          var(--brand-gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.otp-input {
+  width: 48px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+}
+
+.otp-input:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 6px rgba(255, 45, 85, 0.3);
+  outline: none;
+}
+
+.otp-btn {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.otp-btn:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+.resend-link {
+  color: var(--brand-primary);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.resend-link:hover {
+  color: var(--brand-secondary);
+}
+/* otp-section end */
