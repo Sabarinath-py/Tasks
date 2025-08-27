@@ -1,11 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SentriGram</title>
+
+    <!-- bs cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- js-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-    
+
+    <!-- Mobile Navbar -->
+    <nav class="home-navbar-mobile navbar navbar-expand-lg d-lg-none fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="home-logo-mobile navbar-brand fw-bold" href="#">Funturaa</a>
+            <div class="d-flex">
+                <a class="nav-link mx-2" href="#"><i class="far fa-heart"></i></a>
+                <a class="nav-link mx-2" href="#"><i class="far fa-paper-plane"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Navbar end -->
+
+
+    <div class="home-main-container container d-flex p-0">
+
+        <div class="home-left-sidebar d-none d-lg-flex flex-column p-4">
+            <h2 class="home-logo-brand mb-4">Funturaa</h2>
+            <ul class="home-nav-list list-unstyled">
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-home me-2"></i>
+                        Home</a>
+                </li>
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-search me-2"></i>
+                        Search</a></li>
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-compass me-2"></i>
+                        Explore</a></li>
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-video me-2"></i>
+                        Reels</a>
+                </li>
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-paper-plane me-2"></i>
+                        Messages</a></li>
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-heart me-2"></i>
+                        Notifications</a></li>
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-plus-square me-2"></i>
+                        Create</a></li>
+                <li class="home-nav-item mb-3"><a href="#" class="home-nav-link"><i class="fas fa-user-circle me-2"></i>
+                        Profile</a></li>
+            </ul>
+        </div>
+
+        <div class="home-main-content flex-grow-1 p-0">
+            <div class="home-stories-section d-flex overflow-auto p-2 ">
+                <div class="text-center me-3 home-story-item">
+                    <img src="./images/pexels-ketut-subiyanto-4307705.jpg" class="rounded-circle home-story-border"
+                        alt="Story">
+                    <small class="d-block mt-1">Your Story</small>
+                </div>
+                <div class="text-center me-3 home-story-item">
+                    <img src="./images/pexels-ketut-subiyanto-4307705.jpg" class="rounded-circle home-story-border"
+                        alt="Story">
+                    <small class="d-block mt-1">User_2</small>
+                </div>
+                <div class="text-center me-3 home-story-item">
+                    <img src="./images/pexels-ketut-subiyanto-4307705.jpg" class="rounded-circle home-story-border"
+                        alt="Story">
+                    <small class="d-block mt-1">User_3</small>
+                </div>
+                <div class="text-center me-3 home-story-item">
+                    <img src="./images/pexels-ketut-subiyanto-4307705.jpg" class="rounded-circle home-story-border"
+                        alt="Story">
+                    <small class="d-block mt-1">User_4</small>
+                </div>
+            </div>
+
+            <div class="home-post-card card ms-auto me-auto mt-3 mb-4">
+                <div class="home-post-header card-header d-flex align-items-center">
+                    <img src="./images/pexels-ketut-subiyanto-4307705.jpg" class="home-profile-pic rounded-circle me-2"
+                        alt="User Profile">
+                    <h6 class="home-username mb-0 fw-bold">Kai_bo_here</h6>
+                </div>
+                <img src="./images/pexels-ketut-subiyanto-4307705.jpg" class="home-post-image card-img-top"
+                    alt="Post Image">
+                <div class="home-post-body card-body">
+                    <div class="home-icon-row d-flex justify-content-between mb-2">
+                        <div class="home-left-icons">
+                            <a href="#" class="home-icon-link me-2"><i class="far fa-heart fa-lg"></i></a>
+                            <a href="#" class="home-icon-link me-2"><i class="far fa-comment fa-lg"></i></a>
+                            <a href="#" class="home-icon-link"><i class="far fa-paper-plane fa-lg"></i></a>
+                        </div>
+                        <div class="home-right-icon">
+                            <a href="#" class="home-icon-link"><i class="far fa-bookmark fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <p class="home-caption card-text mb-1"><strong>Kai_bo_here</strong> Their hands carved temples, yet
+                        could not dim the fire carved in every pillar...</p>
+                    <small class="home-comment-count text-muted">View all 21 comments</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-right-sidebar d-none d-lg-flex flex-column p-4">
+            <div class="home-user-info d-flex align-items-center mb-3">
+                <img src="...." class="home-your-profile-pic rounded-circle me-3" alt="Your Profile">
+                <div class="home-profile-details">
+                    <h6 class="home-profile-username mb-0 fw-bold">focalstefoss</h6>
+                    <p class="home-profile-name text-muted mb-0">focalstefoss</p>
+                </div>
+            </div>
+            <h6 class="home-suggestions-heading text-muted fw-bold">Suggestions for You</h6>
+            <ul class="home-suggestions-list list-unstyled">
+                <li class="home-suggestion-item d-flex align-items-center my-3">
+                    <img src="./images/pexels-ketut-subiyanto-4307705.jpg"
+                        class="home-suggested-pic rounded-circle me-3" alt="Suggested User">
+                    <div class="home-suggested-details">
+                        <h6 class="home-suggested-username mb-0 fw-bold">luukanyat5685</h6>
+                        <p class="home-suggested-info text-muted mb-0">Followed by abhiramy_sunil + 1 more</p>
+                    </div>
+                    <a href="#" class="home-follow-btn ms-auto text-primary text-decoration-none fw-bold">Follow</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <nav class="home-bottom-navbar navbar navbar-expand-lg d-lg-none fixed-bottom">
+        <div class="container-fluid d-flex justify-content-around">
+            <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            <a class="nav-link" href="#"><i class="fas fa-plus-square"></i></a>
+            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+        </div>
+    </nav>
+
 </body>
+
 </html>

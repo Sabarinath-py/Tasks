@@ -60,6 +60,8 @@ body {
 
 
 
+
+
 /* login-section start */
 .login-card {
     border: 1px solid var(--border-light);
@@ -315,6 +317,18 @@ a:hover {
     font-size: 50px;
 }
 
+.carousel-strong {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    background: linear-gradient(90deg,
+            var(--brand-gradient-start),
+            var(--brand-gradient-mid),
+            var(--brand-gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .carousel-subtitle1 {
     color: var(--text-light);
     font-family: 'Poppins', sans-serif;
@@ -339,12 +353,13 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    border-radius: 8px;
     transition: 0.3s ease-in-out;
 }
 
 .carousel-btn1:hover {
     background-color: var(--btn-primary-hover);
+    color: var(--btn-primary-text);
+    transform: translateY(-3px);
 }
 
 .carousel-btn2 {
@@ -354,17 +369,153 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    border-radius: 8px;
     transition: 0.3s ease-in-out;
 }
 
 .carousel-btn2:hover {
     background-color: var(--btn-secondary-hover);
+    color: var(--btn-secondary-text);
+    transform: translateY(-3px);
 }
 
-.welcome-footer{
+.welcome-footer {
     background: var(--footer-bg);
     color: var(--footer-text);
 }
 
-    /* welcome-page-end */
+/* welcome-page-end */
+
+
+
+
+
+/* index-page-start */
+
+/* Mobile-only Top Navbar */
+.home-navbar-mobile {
+    background-color: var(--bg-website) !important;
+    border-bottom: 1px solid var(--border-light);
+    height: 54px;
+}
+
+.home-logo-mobile {
+    font-size: 1.8rem;
+    font-family: 'Billabong', cursive;
+    color: var(--text-heading) !important;
+}
+
+/* Stories Section (Mobile Only) */
+.home-stories-section {
+    padding-top: 54px; /* To prevent overlap with the fixed top navbar */
+    border-bottom: 1px solid var(--border-light);
+}
+
+.home-story-item small {
+    color: var(--text-body);
+}
+
+.home-story-border {
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    background: linear-gradient(45deg, var(--brand-gradient-start), var(--brand-gradient-mid), var(--brand-gradient-end));
+}
+
+/* Mobile-only Bottom Navbar */
+.home-bottom-navbar {
+    background-color: var(--bg-website) !important;
+    border-top: 1px solid var(--border-light);
+    height: 54px;
+}
+
+.home-bottom-navbar .nav-link {
+    color: var(--text-heading) !important;
+}
+
+/* Main Content Container */
+.home-main-container {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+/* Desktop-specific Sidebar */
+.home-left-sidebar, .home-right-sidebar {
+    height: 100vh;
+    border-right: 1px solid var(--border-light);
+    background-color: var(--bg-website);
+}
+
+.home-suggested-pic{
+    width: 25px;
+    height: 25px;
+}
+.home-left-sidebar {
+    position: sticky;
+    top: 0;
+    width: 250px;
+}
+
+.home-right-sidebar {
+    position: sticky;
+    top: 0;
+    width: 300px;
+    border-left: 1px solid var(--border-light);
+}
+
+/* Main Content */
+.home-main-content {
+    background-color: var(--bg-website);
+    overflow-y: auto;
+    /* Adjust padding to account for fixed navbars */
+    padding-top: 54px; 
+    padding-bottom: 54px;
+}
+
+/* Post Card Styling */
+.home-post-card {
+    width: 400px;
+    height: 500px;
+    background-color: var(--bg-section);
+    border: 1px solid var(--border-light);
+}
+
+.home-post-header {
+    background-color: var(--bg-section);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.home-profile-pic {
+    width: 40px;
+    height: 40px;
+}
+
+.home-post-image {
+    width: 100%;
+    height: auto;
+}
+
+.home-icon-link {
+    color: var(--text-heading) !important;
+}
+
+/* General Link Styling */
+a.home-nav-link {
+    color: var(--text-body) !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+a.home-nav-link:hover {
+    background-color: rgba(var(--text-heading), 0.1);
+}
+
+a.home-follow-btn {
+    color: var(--brand-primary) !important;
+    text-decoration: none;
+}
+/* index-page-end */
+
